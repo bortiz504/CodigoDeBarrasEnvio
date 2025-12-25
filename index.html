@@ -62,7 +62,7 @@ async function cargarPallets() {
     
     // URL dinámica con el valor de la casilla
     //const url = `http://producciondinantwebapi.dinantnest.com/api/TerrestreApi/SPGetPalletsByEnvio?envio=${envio}&opcion=0`;
-	const url = `https://producciondinantwebapi_dev.dinantnest.com/api/TerrestreApi/SPGetPalletsByEnvio?envio=${envio}&opcion=0`;
+	const url = `http://producciondinantwebapi_dev.dinantnest.com/api/TerrestreApi/SPGetPalletsByEnvio?envio=${envio}&opcion=0`;
     
     try {
         const response = await fetch(url);
@@ -119,3 +119,4 @@ async function cargarPallets() {
 </body>
 
 </html>
+
