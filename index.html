@@ -66,6 +66,7 @@ async function cargarPallets() {
     
     try {
         const response = await fetch(url);
+		console.log(response.ok);
         if (!response.ok) throw new Error("No se pudo conectar con el servidor.");
         
         const data = await response.json();
@@ -119,4 +120,5 @@ async function cargarPallets() {
 </body>
 
 </html>
+
 
