@@ -85,6 +85,9 @@
 
             document.getElementById('inputEnvio').value = ebs;
 
+            system = system.replace(/\\/g, "");
+            console.log(system);
+
             //if (!system) {system = "prd";}
 
             // URL dinámica con el valor de la casilla
@@ -141,7 +144,7 @@
                 });
 
             } catch (error) {
-                mensaje.innerHTML = `<div class="alert alert-danger">Error: ${error.message}. </div>`;
+                mensaje.innerHTML = `<div class="alert alert-danger">Error: ${error.message}. Verifica que la API esté activa en el puerto 17839.</div>`;
             }
         }
     </script>
